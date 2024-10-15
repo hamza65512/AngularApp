@@ -1,0 +1,10 @@
+<page-hader  (onMenuClicked)="menuClicked = !menuClicked" />
+
+<mat-drawer-container>
+    <mat-drawer mode="side" [opened]="menuClicked">
+        <side-nave />
+    </mat-drawer>
+    <main>
+        <router-outlet />
+    </main>
+</mat-drawer-container>
